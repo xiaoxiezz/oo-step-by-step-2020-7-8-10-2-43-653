@@ -8,7 +8,7 @@ public class StudentTest {
     @Test
     public void should_return_string_name_and_age_and_class_nogiven() {
         //given
-        Student student=new Student();
+        Student student = new Student();
         //when
         String result = student.introduce();
 

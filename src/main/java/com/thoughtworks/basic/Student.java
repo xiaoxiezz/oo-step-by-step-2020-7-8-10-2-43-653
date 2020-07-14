@@ -16,6 +16,11 @@ public class Student extends Person {
         student.setName("Tom");
         student.setAge(21);
         student.setClassNumber(2);
-        return "My name is "+student.getName()+". I am "+student.getAge()+" years old. I am a Student of Class "+student.getClassNumber()+".";
+        String res = "My name is "
+                + student.getName()
+                + ". I am "+student.getAge()
+                + " years old. I am a Student of Class "
+                + student.getClassNumber()+".";
+        return res;
     }
 }
