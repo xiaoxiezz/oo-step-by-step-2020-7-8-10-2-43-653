@@ -13,7 +13,8 @@ public class Student extends Person {
 
     public String introduce() {
         Student student = new Student();
-//        student.setName("Tom");
+        student.setName("Tom");
+        student.setAge(21);
         student.setClassNumber(2);
         return "My name is "+student.getName()+". I am "+student.getAge()+" years old. I am a Student of Class "+student.getClassNumber()+".";
     }
