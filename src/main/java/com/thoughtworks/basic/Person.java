@@ -29,4 +29,8 @@ public class Person {
     public String introduce(){
         return "My name is " + this.name + ". I am " + this.age + " years old.";
     }
+
+    public void notice(String info) {
+        System.out.println("I'm " + this.name + ". I get a notice: " + info);
+    }
 }
