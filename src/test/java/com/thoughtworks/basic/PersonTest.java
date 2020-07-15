@@ -22,6 +22,7 @@ public class PersonTest {
         //given
         Teacher teacher = new Teacher("Matt",30);
         teacher.setJob("Teacher");
+
         //when
         String result = teacher.introduce();
 
