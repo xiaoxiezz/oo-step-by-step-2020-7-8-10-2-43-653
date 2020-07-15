@@ -21,6 +21,7 @@ public class PersonTest {
     public void should_return_string_name_and_age_and_job_when_give_teacher_info() {
         //given
         Teacher teacher = new Teacher("Matt",30);
+        teacher.setJob("Teacher");
         //when
         String result = teacher.introduce();
 
