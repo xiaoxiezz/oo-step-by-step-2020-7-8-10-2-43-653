@@ -6,9 +6,9 @@ import static org.junit.Assert.assertEquals;
 
 public class PersonTest {
     @Test
-    public void should_return_string_name_and_age_nogiven() {
+    public void should_return_string_name_and_age_when_give_person_info() {
         //given
-        Person person = new Person();
+        Person person = new Person("Tom",21);
 
         //when
         String result = person.introduce();
@@ -18,9 +18,9 @@ public class PersonTest {
     }
 
     @Test
-    public void should_return_string_name_and_age_and_job_nogiven() {
+    public void should_return_string_name_and_age_and_job_when_give_teacher_info() {
         //given
-        Teacher teacher = new Teacher();
+        Teacher teacher = new Teacher("Matt",30);
         //when
         String result = teacher.introduce();
 
