@@ -5,7 +5,7 @@ public class Student extends Person {
     private Klass klass;
     public void changeName(String name) {
         super.setName(name);
-        String notice = "My name is " + getName() + ". I am " + getAge() + " years old. I am a Student of Class " + clazz.getNum() + " now.";
+        String notice = "My name is " + getName() + ". I am " + getAge() + " years old. I am a Student of Class " + klass.getNum() + " now.";
         klass.getStudent().forEach(e -> {
             if (!this.equals(e)) {
                 e.notice(notice);
@@ -15,7 +15,7 @@ public class Student extends Person {
     }
 
     public void changeKlass(Klass klass) {
-        String notice = "My name is " + getName() + ". I am " + getAge() + " years old. I am a Student of Class " + clazz.getNum() + " now.";
+        String notice = "My name is " + getName() + ". I am " + getAge() + " years old. I am a Student of Class " + klass.getNum() + " now.";
         this.klass.getStudent().remove(this);
         this.klass.getStudent().forEach( e -> {
             e.notice(notice);
