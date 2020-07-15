@@ -1,13 +1,16 @@
 package com.thoughtworks.basic;
 
 public class Student extends Person {
-    public Number classNumber;
+    public Student(String name, int age) {
+        super(name, age);
+    }
+    public int classNumber;
 
-    public Number getClassNumber() {
+    public int getClassNumber() {
         return classNumber;
     }
 
-    public void setClassNumber(Number classNumber) {
+    public void setClassNumber(int classNumber) {
         this.classNumber = classNumber;
 }
 

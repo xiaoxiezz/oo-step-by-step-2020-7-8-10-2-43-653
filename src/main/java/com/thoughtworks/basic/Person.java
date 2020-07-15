@@ -1,8 +1,12 @@
 package com.thoughtworks.basic;
 
 public class Person {
+    public Person(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
     public String name;
-    public Number age;
+    public int age;
 
     public String getName() {
         return name;
@@ -12,18 +16,15 @@ public class Person {
         this.name = name;
     }
 
-    public Number getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(Number age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
     public String introduce(){
-        Person person = new Person();
-        person.setName("Tom");
-        person.setAge(21);
-        return "My name is "+person.getName()+". I am "+person.getAge()+" years old.";
+        return "My name is " + this.name + ". I am " + this.age + " years old.";
     }
 }
