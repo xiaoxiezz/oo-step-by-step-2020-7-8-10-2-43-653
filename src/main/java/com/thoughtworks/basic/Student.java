@@ -14,16 +14,10 @@ public class Student extends Person {
         this.classNumber = classNumber;
 }
 
+    @Override
     public String introduce() {
-        Student student = new Student();
-        student.setName("Tom");
-        student.setAge(21);
-        student.setClassNumber(2);
-        String res = "My name is "
-                + student.getName()
-                + ". I am "+student.getAge()
-                + " years old. I am a Student of Class "
-                + student.getClassNumber()+".";
-        return res;
+//        Student student = new Student();
+//        student.setClassNumber(2);
+        return "My name is " + getName() + ". I am " + getAge() + " years old. I am a Student of Class "+getClassNumber()+".";
     }
 }
